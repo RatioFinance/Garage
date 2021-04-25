@@ -20,7 +20,7 @@ fn process_instruction(
     accounts: &[AccountInfo], // The account to say hello to
     _instruction_data: &[u8], // Ignored, all helloworld instructions are hellos
 ) -> ProgramResult {
-    info!("Helloworld Rust program entrypoint");
+    info!("Program entrypoint");
 
     // Iterating accounts is safer then indexing
     let accounts_iter = &mut accounts.iter();
